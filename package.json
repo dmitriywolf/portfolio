@@ -4,20 +4,33 @@
   "description": "Portfolio React Dev",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "babel": "babel src --out-dir build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmitriywolf/cv.git"
   },
-  "author": "D. Volchenko (dmitriy-dev@ukr.net)",
+  "author": "D. Volchenko dmitriy-dev@ukr.net",
   "license": "ISC",
+  "browserslist": [
+    "last 30 chrome versions",
+    "last 30 firefox versions",
+    "last 10 edge versions"
+  ],
   "bugs": {
     "url": "https://github.com/dmitriywolf/cv/issues"
   },
   "homepage": "https://github.com/dmitriywolf/cv#readme",
   "dependencies": {
+    "core-js": "^3.8.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.12.13"
   }
 }
