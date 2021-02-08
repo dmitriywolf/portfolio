@@ -3,13 +3,15 @@
     "@babel/plugin-proposal-class-properties"
   ],
 
-  "presets": [[
+  "presets": [
+    [
     "@babel/env",
     {
       "corejs": 3,
       "useBuiltIns": "usage",
       "modules": false,
       "debug": true
-    }
-    ]]
+    }],
+    "@babel/react"
+  ]
 }

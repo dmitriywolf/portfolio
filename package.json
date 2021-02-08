@@ -2,10 +2,9 @@
   "name": "cv",
   "version": "1.0.0",
   "description": "Portfolio React Dev",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
-    "start": "webpack-dev-server",
-    "babel": "babel src --out-dir build"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -31,6 +30,11 @@
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
     "@babel/plugin-proposal-class-properties": "^7.12.13",
-    "@babel/preset-env": "^7.12.13"
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "file-loader": "^6.2.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "babel-loader": "^8.2.2"
   }
 }
