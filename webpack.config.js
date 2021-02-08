@@ -1,18 +1,51 @@
-module.exports = {
-  mode: "development",
-  entry: './src/index.jsx',
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-  module: {
+module.exports = (env = {}) => {
+
+  const { mode = 'development'} = env;
+
+  const isProd = mode === 'production';
+  const isDev = mode === 'development';
+
+  const getStyleLoaders = () => {
+    return [
+      isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+      'css-loader'
+    ]
+  };
+
+  const getPlugins = () => {
+    const plugins =  [
+      new HtmlWebpackPlugin({
+        title: 'hello',
+        template: 'public/index.html'
+      }),
+    ];
+
+    if(isProd) {
+      plugins.push(new MiniCssExtractPlugin({
+        filename: 'main-[hash:8].css'
+      }))
+    }
+    return plugins;
+  }
+
+  return {
+    mode: isProd ? 'production' : isDev && 'development',
+    entry: './src/index.jsx',
+
+    output: {
+      filename: isProd ? 'main-[hash:8].js' : undefined
+    },
+  
+    module: {
     rules: [
-
+      // Babel
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader'
-          }
-        ]
+        loader: 'babel-loader'
       },
 
       // Loading images
@@ -41,22 +74,26 @@ module.exports = {
             }
         }
         ]
+      },
+
+      // Loading CSS
+      {
+        test: /\.css$/,
+        use: getStyleLoaders()
+      },
+
+      // Loading SASS/SCSS
+      {
+        test: /\.(s[ac]ss)$/,
+        use: [ ...getStyleLoaders(), 'sass-loader' ]
       }
-
     ]
+    },
+
+    plugins: getPlugins(),
+
+    devServer: {
+    open: true
+    } 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 };
