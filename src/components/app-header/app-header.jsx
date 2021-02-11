@@ -1,6 +1,9 @@
 import React from 'react';
 import "./app-header.css";
 
+import Logo from '../logo'
+import Nav from '../nav';
+import Burger from '../burger';
 
 const AppHeader = () => {
 
@@ -9,10 +12,9 @@ const AppHeader = () => {
         <div className="container">
           <div className="header__inner">
 
-
-            <h1>Лого</h1>
-
-
+            <Logo/>
+            <Nav/>
+            <Burger/>
 
           </div>
         </div>

@@ -1,0 +1,5 @@
+.nav {
+  display: flex;
+  align-items: center;
+  transition: display 0.5s;
+}
