@@ -13,6 +13,8 @@ import CVButton from "../cv-button";
 import Contacts from '../contacts';
 import ContactForm from '../contact-form';
 
+import Works from '../works';
+
 export default class App extends Component {
 
   render() {
@@ -35,15 +37,12 @@ export default class App extends Component {
               <div className="app__inner">
 
                 <AppTitle/>
-
-
                 <div className="app__wrapper">
                   <Skills/>
 
                   <CVButton/>
 
                 </div>
-
                 <div className="app__wrapper">
 
                   <Contacts/>
@@ -51,28 +50,15 @@ export default class App extends Component {
                   <ContactForm/>
 
                 </div>
-
-
-
-
-
-
-
-
               </div>
-
-
-
 
             </div>
           </main>
 
-
+          <Works/>
 
         </div>
     );
-
-
   }
 }
 
