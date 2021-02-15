@@ -1,0 +1,16 @@
+.intro__title,
+.intro__subtitle {
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro__subtitle {
+  padding: 10px 5px;
+  font-size: 36px;
+  line-height: 1.4;
+}
+
+.intro__title {
+  font-size: 48px;
+  transition: color 2s linear;
+}
