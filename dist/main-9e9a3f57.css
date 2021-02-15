@@ -127,7 +127,11 @@ a {
   z-index: 3;
 }
 
-
+.app__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 
 
@@ -273,4 +277,132 @@ a {
 
 .brown-text {
   color: rgba(198, 133, 9, 0.8);
+}
+.skills {
+  width: 50%;
+  padding: 10px 0;
+
+}
+
+.skills__title {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(198, 133, 9);
+}
+
+.skills__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.skills__list {
+  padding: 10px 40px 0 0;
+}
+
+
+
+
+
+.skills__item {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  margin: 5px 0;
+  padding-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.skills__item:last-child {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.skills__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 10px;
+}
+.download {
+  padding: 25px 0;
+}
+
+.download__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 260px;
+  margin: 0 auto;
+
+  text-decoration: none;
+  transition: all 0.5s linear;
+  background-color: rgb(198, 133, 9);
+  box-shadow: 0 4px 5px 0 rgba(198, 133, 9, 0.5);
+}
+
+.download__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 2;
+  color: white;
+  letter-spacing: 0.06em;
+}
+
+.download__icon {
+  margin-left: 10px;
+  fill: #ffffff;
+  transition: 0.5s linear;
+}
+
+.download__button:hover {
+  box-shadow: none;
+}
+
+.download__button:active .download__icon {
+  transform: scale(1.1);
+}
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 50%;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(40, 40, 40, 0.8);
+}
+
+.contact__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  text-decoration: none;
+}
+
+.contact__icon {
+  width: 30px;
+  height: 32px;
+  margin-right: 20px;
+  fill: #525252;
+  transition: fill 0.5s, transform 0.5s;
+  outline: none;
+}
+
+.contact__icon:hover {
+  fill: white;
+  transform: scale(1.2);
+}
+.contact-from__wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }

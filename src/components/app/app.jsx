@@ -11,6 +11,7 @@ import Skills from "../skills";
 import CVButton from "../cv-button";
 
 import Contacts from '../contacts';
+import ContactForm from '../contact-form';
 
 export default class App extends Component {
 
@@ -36,19 +37,23 @@ export default class App extends Component {
                 <AppTitle/>
 
 
-                {/*<div className="app__wrapper">*/}
-                {/*  <Skills/>*/}
+                <div className="app__wrapper">
+                  <Skills/>
 
-                {/*  <CVButton/>*/}
-                {/*  */}
-                {/*</div>*/}
+                  <CVButton/>
+
+                </div>
 
                 <div className="app__wrapper">
 
                   <Contacts/>
 
+                  <ContactForm/>
 
                 </div>
+
+
+
 
 
 
