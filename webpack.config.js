@@ -50,15 +50,29 @@ module.exports = (env = {}) => {
 
       // Loading images
       {
-        test: /\.(png|jpg|jpeg|gif|ico)$/, 
+        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
         use: [
           { 
             loader: 'file-loader',
             options: {
-              outputPath: 'images',
+              outputPath: 'img',
               name: '[name]-[sha1:hash:7].[ext]'
             }
         }
+        ]
+      },
+
+      // Loading SVG
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'img',
+              name: '[name].[ext]'
+            }
+          }
         ]
       },
 

@@ -62,16 +62,6 @@ a {
   text-decoration: none;
 }
 
-.green-text {
-  color: #00cccc;
-  text-shadow: 2px -2px 0 rgba(255, 255, 255, 0.8);
-  letter-spacing: 0.06em;
-}
-
-.brown-text {
-  color: rgba(198, 133, 9, 0.8);
-}
-
 
 /*App*/
 .app__container {
