@@ -8,6 +8,9 @@ import Burger from "../burger";
 
 import AppTitle from "../app-title";
 import Skills from "../skills";
+import CVButton from "../cv-button";
+
+import Contacts from '../contacts';
 
 export default class App extends Component {
 
@@ -27,21 +30,38 @@ export default class App extends Component {
 
           <main className="app__main">
             <div className="app__container">
+
               <div className="app__inner">
 
                 <AppTitle/>
 
-                <Skills/>
+
+                {/*<div className="app__wrapper">*/}
+                {/*  <Skills/>*/}
+
+                {/*  <CVButton/>*/}
+                {/*  */}
+                {/*</div>*/}
+
+                <div className="app__wrapper">
+
+                  <Contacts/>
+
+
+                </div>
+
+
 
 
 
               </div>
+
+
+
+
             </div>
           </main>
 
-          <footer className="app__footer">
-
-          </footer>
 
 
         </div>

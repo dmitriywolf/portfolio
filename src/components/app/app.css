@@ -127,7 +127,11 @@ a {
   z-index: 3;
 }
 
-
+.app__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 
 
