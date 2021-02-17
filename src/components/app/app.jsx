@@ -24,9 +24,11 @@ export default class App extends Component {
           <header className="app__header">
             <div className="app__container">
               <div className="header__inner">
+
                 <Logo/>
                 <Nav/>
                 <Burger/>
+
               </div>
             </div>
           </header>
@@ -37,27 +39,31 @@ export default class App extends Component {
               <div className="app__inner">
 
                 <AppTitle/>
-                <div className="app__wrapper">
+
+                <div className="app__wrap">
                   <Skills/>
 
                   <CVButton/>
-
-                </div>
-                <div className="app__wrapper">
-
                   <Contacts/>
 
                   <ContactForm/>
 
                 </div>
+
+
               </div>
+
 
             </div>
           </main>
 
-          <Works/>
+
 
         </div>
+
+
+
+
     );
   }
 }

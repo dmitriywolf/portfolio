@@ -81,15 +81,15 @@ a {
   transition: background-color 0.7s;
 }
 
-.header.fixed {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 100;
-}
+/*.header.fixed {*/
+/*  position: fixed;*/
+/*  background-color: rgba(0, 0, 0, 0.9);*/
+/*  z-index: 100;*/
+/*}*/
 
-.header.show {
-  background-color: rgba(0, 0, 0, 0.9);
-}
+/*.header.show {*/
+/*  background-color: rgba(0, 0, 0, 0.9);*/
+/*}*/
 
 .header__inner {
   display: flex;
@@ -125,6 +125,7 @@ a {
 .app__inner {
   position: relative;
   z-index: 3;
+
 }
 
 .app__wrapper {
