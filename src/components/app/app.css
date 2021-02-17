@@ -66,7 +66,7 @@ a {
 /*App*/
 .app__container {
   width: 100%;
-  max-width: 1190px;
+  max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -99,6 +99,7 @@ a {
 
 .app__main {
   position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,12 +126,11 @@ a {
 .app__inner {
   position: relative;
   z-index: 3;
-
 }
 
 .app__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
