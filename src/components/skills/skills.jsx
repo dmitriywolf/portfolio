@@ -3,105 +3,24 @@ import './skills.css';
 
 import SkillList from "../skills-list";
 
+const skills = [
+  [1, 'HTML5 & CSS3', 'icon-html', 'icon-css'],
+  [2, 'Sass(Scss)', 'icon-sass'],
+  [3, 'Bootstrap 4 / Materialize', 'icon-bootstrap'],
+  [4, 'Gulp 4', 'icon-gulp'],
+  [5, 'Babel', 'icon-babel'],
+  [6, 'Webpack', 'icon-webpack'],
+  [7, 'React / Redux', 'icon-react', 'icon-redux']
+];
+
+
 const Skills = () => {
 
   return (
 
       <div className="skills">
-
         <h3 className="skills__title">Technical Skills</h3>
-
-        <div className="skills__inner">
-
-          <SkillList/>
-
-
-
-
-          {/*<ul className="skills__list">*/}
-
-
-          {/*  <li className="skills__item">*/}
-          {/*    <p>HTML5 & CSS3</p>*/}
-
-          {/*    <div className="skills__icon-wrapper">*/}
-          {/*      <svg className="skills__icon" width='22px' height="22px">*/}
-          {/*        <use xlinkHref="./img/sprite.svg#icon-html"/>*/}
-          {/*      </svg>*/}
-          {/*      <svg className="skills__icon" width='22px' height="22px">*/}
-          {/*        <use xlinkHref="./img/sprite.svg#icon-css"/>*/}
-          {/*      </svg>*/}
-          {/*    </div>*/}
-
-
-          {/*  </li>*/}
-
-          {/*  <li className="skills__item">*/}
-          {/*    <p>SASS(SCSS)</p>*/}
-          {/*    <div className="skills__icon-wrapper">*/}
-          {/*      <svg className="skills__icon" width='22px' height="22px">*/}
-          {/*        <use xlinkHref="img/sprite.svg#icon-sass"/>*/}
-          {/*      </svg>*/}
-          {/*    </div>*/}
-          {/*  </li>*/}
-
-          {/*  <li className="skills__item">*/}
-          {/*    <p>Bootstrap 4 / Materilize</p>*/}
-          {/*    <div className="skills__icon-wrapper">*/}
-          {/*      <svg className="skills__icon" width='22px' height="22px">*/}
-          {/*        <use xlinkHref="img/sprite.svg#icon-bootstrap"/>*/}
-          {/*      </svg>*/}
-          {/*    </div>*/}
-          {/*  </li>*/}
-
-
-
-
-          {/*  <li className="skills__item">*/}
-          {/*    <p>Gulp 4</p>*/}
-          {/*    <div className="skills__icon-wrapper">*/}
-          {/*      <svg className="skills__icon" width='22px' height="22px">*/}
-          {/*        <use xlinkHref="img/sprite.svg#icon-gulp"/>*/}
-          {/*      </svg>*/}
-          {/*    </div>*/}
-          {/*  </li>*/}
-
-          {/*  <li className="skills__item">*/}
-          {/*    <p>Babel</p>*/}
-          {/*    <div className="skills__icon-wrapper">*/}
-          {/*      <svg className="skills__icon" width='24px' height="24px">*/}
-          {/*        <use xlinkHref="img/sprite.svg#icon-babel"/>*/}
-          {/*      </svg>*/}
-          {/*    </div>*/}
-          {/*  </li>*/}
-
-          {/*  <li className="skills__item">*/}
-          {/*    <p>Webpack</p>*/}
-          {/*    <div className="skills__icon-wrapper">*/}
-          {/*      <svg className="skills__icon" width='22px' height="22px">*/}
-          {/*        <use xlinkHref="img/sprite.svg#icon-webpack"/>*/}
-          {/*      </svg>*/}
-          {/*    </div>*/}
-          {/*  </li>*/}
-
-
-
-          {/*  <li className="skills__item">*/}
-          {/*    <p>React/Redux</p>*/}
-          {/*    <div className="skills__icon-wrapper">*/}
-          {/*      <svg className="skills__icon" width='22px' height="22px">*/}
-          {/*        <use xlinkHref="img/sprite.svg#icon-react"/>*/}
-          {/*      </svg>*/}
-          {/*      <svg className="skills__icon" width='22px' height="22px">*/}
-          {/*        <use xlinkHref="img/sprite.svg#icon-redux"/>*/}
-          {/*      </svg>*/}
-          {/*    </div>*/}
-          {/*  </li>*/}
-
-          {/*</ul>*/}
-
-
-        </div>
+        <SkillList skills={skills}/>
       </div>
   );
 };

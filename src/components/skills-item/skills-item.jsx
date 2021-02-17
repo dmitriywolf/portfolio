@@ -2,23 +2,25 @@ import React from 'react';
 import './skills-item.css';
 
 
+const SkillsItem = ({title, icons}) => {
 
 
-const SkillsItem = ( {title, iconTitle} ) => {
+  const svgIcons = icons.map((item, index) => {
+    return (
+        <svg className="skills__icon" width='22px' height="22px" key={index}>
+          <use xlinkHref={`./img/sprite.svg#${item}`}/>
+        </svg>
+    )
+  });
 
 
   return (
-      <li className="skills__item">
+      <>
         <p>{title}</p>
-
         <div className="skills__icon-wrapper">
-
-          <svg className="skills__icon">
-            <use xlinkHref={`./img/sprite.svg#${iconTitle}`}/>
-          </svg>
-
+          {svgIcons}
         </div>
-      </li>
+      </>
   )
 };
 

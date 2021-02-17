@@ -66,7 +66,7 @@ a {
 /*App*/
 .app__container {
   width: 100%;
-  max-width: 1190px;
+  max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -81,15 +81,15 @@ a {
   transition: background-color 0.7s;
 }
 
-.header.fixed {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 100;
-}
+/*.header.fixed {*/
+/*  position: fixed;*/
+/*  background-color: rgba(0, 0, 0, 0.9);*/
+/*  z-index: 100;*/
+/*}*/
 
-.header.show {
-  background-color: rgba(0, 0, 0, 0.9);
-}
+/*.header.show {*/
+/*  background-color: rgba(0, 0, 0, 0.9);*/
+/*}*/
 
 .header__inner {
   display: flex;
@@ -99,6 +99,7 @@ a {
 
 .app__main {
   position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +130,7 @@ a {
 
 .app__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -281,7 +282,6 @@ a {
 .skills {
   width: 50%;
   padding: 10px 0;
-
 }
 
 .skills__title {
@@ -290,15 +290,8 @@ a {
   color: rgb(198, 133, 9);
 }
 
-.skills__inner {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 
-.skills__list {
-  padding: 10px 40px 0 0;
-}
 
 
 
@@ -328,6 +321,9 @@ a {
   justify-content: center;
   align-content: center;
   margin-left: 10px;
+}
+.skills__list {
+  padding: 10px 40px 0 0;
 }
 .download {
   padding: 25px 0;

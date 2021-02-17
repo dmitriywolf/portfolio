@@ -1,0 +1,25 @@
+.skills__item {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  margin: 5px 0;
+  padding-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.skills__item:last-child {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.skills__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 10px;
+}
