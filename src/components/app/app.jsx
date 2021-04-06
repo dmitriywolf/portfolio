@@ -44,7 +44,7 @@ export default class App extends Component {
 
                   <Skills/>
 
-                  {/*<CVButton/>*/}
+                  <CVButton/>
 
 
                   {/*<Contacts/>*/}

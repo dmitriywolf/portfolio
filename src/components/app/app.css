@@ -128,9 +128,9 @@ a {
   z-index: 3;
 }
 
-.app__wrapper {
+.app__wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 

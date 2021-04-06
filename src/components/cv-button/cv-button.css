@@ -1,22 +1,12 @@
-.download {
-  padding: 25px 0;
-}
-
-.download__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 260px;
-  margin: 0 auto;
-
+.cv-button {
+  padding: 5px 10px;
   text-decoration: none;
   transition: all 0.5s linear;
   background-color: rgb(198, 133, 9);
   box-shadow: 0 4px 5px 0 rgba(198, 133, 9, 0.5);
 }
 
-.download__text {
+.cv-button__text {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 2;
@@ -24,16 +14,16 @@
   letter-spacing: 0.06em;
 }
 
-.download__icon {
+.cv-button__icon {
   margin-left: 10px;
   fill: #ffffff;
   transition: 0.5s linear;
 }
 
-.download__button:hover {
+.cv-button__button:hover {
   box-shadow: none;
 }
 
-.download__button:active .download__icon {
+.cv-button__button:active .cv-button__icon {
   transform: scale(1.1);
 }
