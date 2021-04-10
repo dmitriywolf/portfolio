@@ -42,14 +42,12 @@ export default class App extends Component {
 
                 <div className="app__wrap">
 
-                  <Skills/>
+                  {/*<Skills/>*/}
+                  {/*<CVButton/>*/}
 
-                  <CVButton/>
 
-
-                  {/*<Contacts/>*/}
-
-                  {/*<ContactForm/>*/}
+                  <Contacts/>
+                  <ContactForm/>
 
                 </div>
 
