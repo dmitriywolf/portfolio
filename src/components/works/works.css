@@ -22,9 +22,6 @@
   z-index: 3;
 }
 
-.works__wrapper {
-
-}
 
 .works__title {
   padding-bottom: 20px;
@@ -34,15 +31,25 @@
   color: rgb(198, 133, 9);
 }
 
+.works__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.works__filters {
+  width: 25%;
+}
+
 .works__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 75%;
 }
 
 .works__item {
   position: relative;
-  width: 31%;
+  width: 45%;
   margin: 10px;
   transition: transform 0.5s;
   overflow: hidden;
