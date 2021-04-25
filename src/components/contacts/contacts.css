@@ -1,10 +1,18 @@
+.contacts {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+}
+
 .footer__contacts {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /*justify-content: space-between;*/
+  /*align-items: center;*/
   flex-wrap: wrap;
+  /*background-color: #000000;*/
 
-  width: 50%;
+
   padding: 25px 0;
   border-bottom: 1px solid rgba(40, 40, 40, 0.8);
 }
@@ -30,4 +38,9 @@
 .contact__icon:hover {
   fill: white;
   transform: scale(1.2);
+}
+
+.contact__item span {
+  font-size: 22px;
+  color: #ffffff;
 }

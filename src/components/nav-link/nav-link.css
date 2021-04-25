@@ -13,5 +13,6 @@
 .nav__link--active,
 .nav__link:hover,
 .nav__link:focus {
+  cursor: pointer;
   color: rgba(198, 133, 9, 0.8);
 }

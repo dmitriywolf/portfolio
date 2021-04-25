@@ -9,7 +9,7 @@ const Contacts = () => {
             <svg className="contact__icon">
               <use xlinkHref="img/sprite.svg#icon-phone"/>
             </svg>
-            <span>+38093934599*</span>
+            {/*<span>+38093934599*</span>*/}
           </a>
 
 
@@ -17,7 +17,7 @@ const Contacts = () => {
             <svg className="contact__icon">
               <use xlinkHref="img/sprite.svg#icon-email"/>
             </svg>
-            <span>dmitriy-dev@ukr.net</span>
+            {/*<span>dmitriy-dev@ukr.net</span>*/}
           </a>
 
 
@@ -25,7 +25,7 @@ const Contacts = () => {
             <svg className="contact__icon">
               <use xlinkHref="img/sprite.svg#icon-github"/>
             </svg>
-            <span>DmitriyWolf</span>
+            {/*<span>DmitriyWolf</span>*/}
           </a>
         </div>
   )

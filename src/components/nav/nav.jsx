@@ -11,7 +11,6 @@ const Nav = () => {
         <NavLink link="main" />
         <NavLink link="skills" />
         <NavLink link="works" />
-        <NavLink link="contacts" />
       </nav>
   )
 };
