@@ -1,10 +1,10 @@
 .works__wrapper {
-  position: relative;
-  background-image: url("./img/bg-works.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /*position: relative;*/
+  /*background-image: url("./img/bg-works.jpg");*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*background-attachment: fixed;*/
 }
 
 /*.works__wrapper::after {*/
@@ -20,6 +20,18 @@
 .works {
   position: relative;
   z-index: 3;
+}
+
+.works__wrapper {
+
+}
+
+.works__title {
+  padding-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 400;
+  color: rgb(198, 133, 9);
 }
 
 .works__list {

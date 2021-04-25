@@ -39,35 +39,21 @@ export default class App extends Component {
 
 
                 <div className="app__wrap">
-                  <AppTitle/>
+                  {/*<AppTitle/>*/}
                   {/*<Skills/>*/}
+                  <Works/>
 
 
                 </div>
-
-
-
-
               </div>
-
-
-
             </div>
           </main>
           <div className="contacts">
             <div className="app__container">
               <Contacts/>
             </div>
-
           </div>
-
-
-
         </div>
-
-
-
-
     );
   }
 }

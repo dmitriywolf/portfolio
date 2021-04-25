@@ -1,7 +1,6 @@
 import React from 'react';
 import './works.css';
 
-
 import src1 from './img/courses.jpg';
 import src2 from './img/advogrand.jpg';
 import src3 from './img/yoga.jpg';
@@ -10,12 +9,15 @@ import src5 from './img/houses.jpg';
 import src6 from './img/belaz.jpg';
 import src7 from './img/degree.jpg';
 import src8 from './img/bouncy.jpg';
+import src9 from './img/todo.jpg';
 
 const Works = () => {
   return (
       <div className="works__wrapper">
-        <ul className="works__list">
 
+        <h1 className="works__title">My works</h1>
+
+        <ul className="works__list">
           <li className="works__item work">
             <img className="works__item-img" src={src1} alt="Mining Courses"/>
             <div className="works__item-content">
@@ -23,22 +25,33 @@ const Works = () => {
               <div className="work__technology">
                 <span>SPA</span>
               </div>
-
               <div className="work__button-wrapper">
-                <a className="work__button" href="https://calm-fortress-08818.herokuapp.com/"
+                <a className="work__button" href="https://dmitriywolf.github.io/courses/dist/"
                    target="_blank">
                   <svg className="work__img" width="14" height="14">
                     <use xlinkHref="img/sprite.svg#icon-web"/>
                   </svg>
                   Go to Site</a>
-                <a className="work__button" href="https://github.com/dmitriywolf/courses"
-                   target="_blank">
-                  <svg className="work__img" width="14" height="14">
-                    <use xlinkHref="img/sprite.svg#icon-github"/>
-                  </svg>
-                  GitHub</a>
+              </div>
+            </div>
+          </li>
+
+          <li className="works__item work">
+            <img className="works__item-img" src={src9} alt="ToDoList"/>
+            <div className="works__item-content">
+              <h3 className="work__title">Todo list</h3>
+              <div className="work__technology">
+                <span>SPA</span>
               </div>
 
+              <div className="work__button-wrapper">
+                <a className="work__button" href="https://dmitriywolf.github.io/todo/dist/"
+                   target="_blank">
+                  <svg className="work__img" width="14" height="14">
+                    <use xlinkHref="img/sprite.svg#icon-web"/>
+                  </svg>
+                  Go to Site</a>
+              </div>
             </div>
 
           </li>
@@ -52,7 +65,7 @@ const Works = () => {
                 <span>Landing Page</span>
               </div>
               <div className="work__button-wrapper">
-                <a className="work__button" href="https://dmitriywolf.github.io/landingpages/advogrand"
+                <a className="work__button" href="https://dmitriywolf.github.io/advogrand/dist/"
                    target="_blank">
                   <svg className="work__img" width="14" height="14">
                     <use xlinkHref="img/sprite.svg#icon-web"/>
@@ -74,7 +87,7 @@ const Works = () => {
               </div>
 
               <div className="work__button-wrapper">
-                <a className="work__button" href="https://dmitriywolf.github.io/landingpages/yoga"
+                <a className="work__button" href="https://dmitriywolf.github.io/yoga/dist/"
                    target="_blank">
                   <svg className="work__img" width="14" height="14">
                     <use xlinkHref="img/sprite.svg#icon-web"/>
@@ -95,7 +108,7 @@ const Works = () => {
               </div>
 
               <div className="work__button-wrapper">
-                <a className="work__button" href="https://dmitriywolf.github.io/landingpages/continent"
+                <a className="work__button" href="https://dmitriywolf.github.io/continent/dist/"
                    target="_blank">
                   <svg className="work__img" width="14" height="14">
                     <use xlinkHref="img/sprite.svg#icon-web"/>
@@ -116,7 +129,7 @@ const Works = () => {
               </div>
 
               <div className="work__button-wrapper">
-                <a className="work__button" href="https://dmitriywolf.github.io/landingpages/houses"
+                <a className="work__button" href="https://dmitriywolf.github.io/houses/dist/"
                    target="_blank">
                   <svg className="work__img" width="14" height="14">
                     <use xlinkHref="img/sprite.svg#icon-web"/>
@@ -137,7 +150,7 @@ const Works = () => {
               </div>
 
               <div className="work__button-wrapper">
-                <a className="work__button" href="https://dmitriywolf.github.io/landingpages/belaz"
+                <a className="work__button" href="https://dmitriywolf.github.io/belaz/dist"
                    target="_blank">
                   <svg className="work__img" width="14" height="14">
                     <use xlinkHref="img/sprite.svg#icon-web"/>
@@ -158,7 +171,7 @@ const Works = () => {
               </div>
 
               <div className="work__button-wrapper">
-                <a className="work__button" href="https://dmitriywolf.github.io/landingpages/degree"
+                <a className="work__button" href="https://dmitriywolf.github.io/degree/dist/"
                    target="_blank">
                   <svg className="work__img" width="14" height="14">
                     <use xlinkHref="img/sprite.svg#icon-web"/>
@@ -178,7 +191,7 @@ const Works = () => {
               </div>
 
               <div className="work__button-wrapper">
-                <a className="work__button" href="https://dmitriywolf.github.io/landingpages/bouncy"
+                <a className="work__button" href="https://dmitriywolf.github.io//bouncy/dist/"
                    target="_blank">
                   <svg className="work__img" width="14" height="14">
                     <use xlinkHref="img/sprite.svg#icon-web"/>
@@ -191,7 +204,6 @@ const Works = () => {
 
 
         </ul>
-
       </div>
   )
 };
