@@ -39,8 +39,8 @@ export default class App extends Component {
 
 
                 <div className="app__wrap">
-                  {/*<AppTitle/>*/}
-                  {/*<Skills/>*/}
+                  <AppTitle/>
+                  <Skills/>
                   <Works/>
 
 
