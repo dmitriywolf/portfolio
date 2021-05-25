@@ -1,5 +1,21 @@
 .nav {
-  display: flex;
+  display: none;
   align-items: center;
   transition: display 0.5s;
+}
+
+.nav.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 20%;
+
+  background-color: rgba(0,0,0, 0.5);
+
+
 }

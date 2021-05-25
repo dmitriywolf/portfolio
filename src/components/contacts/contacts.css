@@ -1,21 +1,21 @@
 .contacts {
   position: fixed;
   z-index: 100;
-  bottom: 0;
-
-  width: 100%;
+  top: calc(50% - 30px);
+  left: 20px;
 }
 
 .footer__contacts {
   display: flex;
+  flex-direction: column;
   /*justify-content: space-between;*/
   /*align-items: center;*/
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   /*background-color: #000000;*/
 
 
-  padding: 25px 0;
-  border-bottom: 1px solid rgba(40, 40, 40, 0.8);
+  /*padding: 25px 0;*/
+  /*border-bottom: 1px solid rgba(40, 40, 40, 0.8);*/
 }
 
 .contact__item {
@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
 
-
+  margin: 15px 0;
   text-decoration: none;
 }
 
