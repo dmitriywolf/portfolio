@@ -18,7 +18,7 @@ export default class App extends Component {
           <Header/>
           <Intro/>
           <Skills/>
-          {/*<Works/>*/}
+          <Works/>
           {/*<Contacts/>*/}
         </div>
     );

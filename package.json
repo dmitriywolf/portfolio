@@ -5,7 +5,7 @@
   "main": "index.jsx",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --env mode=production"
+    "build": "webpack --env mode=development"
   },
   "repository": {
     "type": "git",
@@ -14,9 +14,9 @@
   "author": "D. Volchenko dmitriy-dev@ukr.net",
   "license": "ISC",
   "browserslist": [
-    "last 30 chrome versions",
-    "last 30 firefox versions",
-    "last 10 edge versions"
+    "last 10 chrome versions",
+    "last 10 firefox versions",
+    "last 5 edge versions"
   ],
   "bugs": {
     "url": "https://github.com/dmitriywolf/cv/issues"
