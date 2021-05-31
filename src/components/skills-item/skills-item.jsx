@@ -2,7 +2,7 @@ import React from 'react';
 import './skills-item.css';
 
 
-const SkillsItem = ({title, icons}) => {
+const SkillsItem = ( {title, icons} ) => {
 
 
   const svgIcons = icons.map((item, index) => {

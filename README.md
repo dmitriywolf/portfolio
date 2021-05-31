@@ -1,2 +1,2 @@
 # dmitriywolf
-[portfolio](https://dmitriywolf.github.io/cv/dist/)
+[Portfolio](https://dmitriywolf.github.io/cv/dist/)

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './logo.css';
 
 const Logo = () => {
@@ -20,8 +19,7 @@ const Logo = () => {
 		c-2.401-1.739-6.424-5.787-4.742-8.657c0.737-1.26,3.361-1.56,5.472-3.547c2.706-2.548,5.121-6.546,7.337-4.924
 		C77.847,53.264,73.291,63.729,71.606,66.595z"/>
         </svg>
-
-        <p className="logo__text">Dmitriy.Wolf</p>
+        <p className="logo__text">Dmitriy.dev</p>
       </div>
   )
 };

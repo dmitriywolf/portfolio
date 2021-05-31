@@ -7,7 +7,7 @@ import NavLink from '../nav-link'
 const Nav = () => {
 
   return(
-      <nav className='nav active'>
+      <nav className="nav">
         <NavLink link="main" />
         <NavLink link="skills" />
         <NavLink link="works" />
