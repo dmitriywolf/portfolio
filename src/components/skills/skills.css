@@ -4,16 +4,9 @@
 }
 
 .skills__title {
-  padding-bottom: 10px;
-  font-size: 24px;
-  font-weight: 500;
-  color: gray;
-}
-
-.skills__subtitle {
   font-size: 20px;
   font-weight: 400;
-  color: rgb(198, 133, 9);
+  color: #00cccc;
 }
 
 

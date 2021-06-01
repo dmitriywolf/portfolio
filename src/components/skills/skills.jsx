@@ -21,8 +21,7 @@ const Skills = () => {
   return (
       <div className="skills">
         <div className="container">
-          <h2 className="skills__title">FrontEnd Developer</h2>
-          <h3 className="skills__subtitle">Skills / Experience</h3>
+          <h3 className="skills__title">Skills / Experience</h3>
           <SkillList skills={skills}/>
         </div>
       </div>

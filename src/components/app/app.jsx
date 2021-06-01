@@ -5,9 +5,7 @@ import './img/sprite.svg';
 import Header from '../header';
 import Intro from "../intro";
 import Skills from "../skills";
-import Contacts from '../contacts';
-import Works from '../works';
-
+import WorksFilter from '../works-filter';
 
 
 export default class App extends Component {
@@ -18,8 +16,7 @@ export default class App extends Component {
           <Header/>
           <Intro/>
           <Skills/>
-          <Works/>
-          {/*<Contacts/>*/}
+          <WorksFilter/>
         </div>
     );
   }

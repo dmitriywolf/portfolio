@@ -1,7 +1,7 @@
 .intro__title,
 .intro__subtitle {
   text-align: center;
-  color: #ffffff;
+  font-weight: normal;
 }
 
 .intro__subtitle {

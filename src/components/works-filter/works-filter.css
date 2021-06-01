@@ -1,10 +1,16 @@
 .filter-wrapper {
   display: flex;
   justify-content: space-between;
-
   margin: 10px 0;
-
 }
+
+
+.filter-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #00cccc;
+}
+
 
 
 .filter-btn {
@@ -23,12 +29,12 @@
 }
 
 .filter-btn:hover {
-  color: rgb(198, 133, 9);
-  border-color: rgb(198, 133, 9);
+  color: #00cccc;
+  border-color: rgb(0, 204, 204);
 }
 
 .filter-btn.active {
   color: #ffffff;
-  background: rgb(198, 133, 9);
+  background: #00cccc;
   border-color: transparent;
 }

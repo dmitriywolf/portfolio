@@ -5,7 +5,8 @@ import './works-filter.css';
 const WorksFilter = () => {
   return (
 
-      <>
+      <div className="container">
+        <h3 className="filter-title">Works</h3>
         <div className="filter-wrapper">
 
           <div className="filter-buttons filter-buttons--type">
@@ -24,7 +25,7 @@ const WorksFilter = () => {
         </div>
 
 
-      </>
+      </div>
 
 
   )

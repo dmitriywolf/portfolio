@@ -1,47 +1,26 @@
 .contacts {
-  position: fixed;
-  z-index: 100;
-  top: calc(50% - 30px);
-  left: 20px;
-}
-
-.footer__contacts {
   display: flex;
-  flex-direction: column;
-  /*justify-content: space-between;*/
-  /*align-items: center;*/
-  /*flex-wrap: wrap;*/
-  /*background-color: #000000;*/
-
-
-  /*padding: 25px 0;*/
-  /*border-bottom: 1px solid rgba(40, 40, 40, 0.8);*/
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  margin: 40px auto 0;
 }
 
 .contact__item {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin: 15px 0;
-  text-decoration: none;
+  margin: 0 15px;
 }
 
 .contact__icon {
   width: 30px;
-  height: 32px;
-  margin-right: 20px;
+  height: 42px;
   fill: #525252;
   transition: fill 0.5s, transform 0.5s;
   outline: none;
 }
 
 .contact__icon:hover {
-  fill: white;
   transform: scale(1.2);
-}
-
-.contact__item span {
-  font-size: 22px;
-  color: #ffffff;
 }

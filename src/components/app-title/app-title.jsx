@@ -6,9 +6,8 @@ const AppTitle = () => {
 
   return (
       <div>
-        <h1 className="intro__title"><span className="green-text">Hello,</span></h1>
-        <h2 className="intro__subtitle"><span className="brown-text">Welcome</span> to my portfolio page
-          <span className="brown-text">:)</span></h2>
+        <h1 className="intro__title"><span className="green-text">Hello,</span> I am FrontEnd Dev,</h1>
+        <h2 className="intro__subtitle"><span className="green-text">Welcome</span> to my portfolio page:)</h2>
       </div>
   )
 };
