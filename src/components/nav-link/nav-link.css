@@ -1,39 +1,14 @@
 .nav__link {
-  margin: 10px 20px;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  margin: 0 20px;
+  font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
-
   color: #00cccc;
-  transition: color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .nav__link--active,
 .nav__link:hover,
 .nav__link:focus {
-  cursor: pointer;
-  color: rgba(198, 133, 9, 0.8);
+  color: gray;
 }
-
-
-/*.nav__link {*/
-/*  margin: 10px 20px;*/
-/*  font-size: 14px;*/
-/*  font-weight: 700;*/
-/*  letter-spacing: 0.05em;*/
-/*  text-decoration: none;*/
-/*  text-transform: uppercase;*/
-
-/*  color: #ffffff;*/
-/*  transition: color 0.3s ease-in-out;*/
-/*}*/
-
-/*.nav__link--active,*/
-/*.nav__link:hover,*/
-/*.nav__link:focus {*/
-/*  cursor: pointer;*/
-/*  color: rgba(198, 133, 9, 0.8);*/
-/*}*/
-

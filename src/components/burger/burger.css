@@ -1,12 +1,9 @@
-/*Burger
-==============================*/
 .burger {
   display: block;
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: opacity 0.3s linear;
   outline: none;
 }
 
@@ -40,20 +37,22 @@
   top: 6px;
 }
 
-.burger:hover {
-  opacity: 0.7;
+.burger:hover .burger__item,
+.burger:hover .burger__item::before,
+.burger:hover .burger__item::after {
+  background-color: gray
 }
 
-.burger.burger--close .burger__item {
+.burger._burger--close .burger__item {
   background-color: transparent;
 }
 
-.burger.burger--close .burger__item::before {
+.burger._burger--close .burger__item::before {
   transform: rotate(45deg);
   top: 0;
 }
 
-.burger.burger--close .burger__item::after {
+.burger._burger--close .burger__item::after {
   transform: rotate(-45deg);
   top: 0;
 }

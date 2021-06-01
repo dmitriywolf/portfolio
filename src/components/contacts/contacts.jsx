@@ -4,6 +4,7 @@ import './contacts.css';
 const Contacts = () => {
   return (
       <div className="contacts">
+
         <a className="contact__item" href="tel:+380939345992">
           <svg className="contact__icon">
             <use xlinkHref="img/sprite.svg#icon-phone"/>

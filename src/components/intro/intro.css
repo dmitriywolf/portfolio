@@ -10,11 +10,6 @@
 /*  margin: 0 auto;*/
 /*  !*min-height: 100vh;*!*/
 
-/*  background-image: url("./bg-intro.jpg");*/
-/*  background-position: center;*/
-/*  background-repeat: no-repeat;*/
-/*  background-size: cover;*/
-/*  background-attachment: fixed;*/
 /*}*/
 
 /*.intro::after {*/
@@ -29,18 +24,14 @@
 
 .intro__inner {
   position: relative;
-  z-index: 3;
+  display: flex;
+  justify-content: space-between;
   margin: 0 -10px;
 }
 
 
-.intro__inner {
-  display: flex;
-  justify-content: space-between;
-}
-
 .intro__img-wrap,
-.intro__text {
+.intro__content-wrap {
   width: 50%;
 }
 
@@ -48,8 +39,7 @@
   font-size: 0;
 }
 
-
-.intro__text {
+.intro__content-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,27 +1,17 @@
-.intro__title,
-.intro__subtitle {
-  text-align: center;
+.app__title,
+.app__subtitle {
   font-weight: normal;
+  text-align: center;
 }
 
-.intro__subtitle {
-  padding: 10px 5px;
-  font-size: 36px;
-  line-height: 1.4;
-}
-
-.intro__title {
+.app__title {
   font-size: 48px;
-  transition: color 2s linear;
+}
+
+.app__subtitle {
+  padding: 10px 0;
+  font-size: 36px;
 }
 
 
-.green-text {
-  color: #00cccc;
-  text-shadow: 2px -2px 0 rgba(255, 255, 255, 0.8);
-  letter-spacing: 0.06em;
-}
 
-.brown-text {
-  color: rgba(198, 133, 9, 0.8);
-}

@@ -1,12 +1,10 @@
 import React from 'react';
 import "./intro.css";
 
-
 import AppTitle from "../app-title";
 import Contacts from '../contacts';
-import Arrow from "../arrow";
 
-import src from './intro.jpg';
+import srcIntroImg from './intro.jpg';
 
 const Intro = () => {
   return (
@@ -14,10 +12,10 @@ const Intro = () => {
         <div className="container">
           <div className="intro__inner">
             <div className="intro__img-wrap">
-              <img src={src} alt={"Intro"}/>
+              <img src={srcIntroImg} alt={"Intro"}/>
             </div>
 
-            <div className="intro__text">
+            <div className="intro__content-wrap">
               <AppTitle/>
               <Contacts/>
             </div>

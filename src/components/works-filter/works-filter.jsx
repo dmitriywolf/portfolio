@@ -4,27 +4,29 @@ import './works-filter.css';
 
 const WorksFilter = () => {
   return (
+      <div className="filter__wrapper">
+        <div className="container">
 
-      <div className="container">
-        <h3 className="filter-title">Works</h3>
-        <div className="filter-wrapper">
+          <h3 className="filter__title">Works</h3>
 
-          <div className="filter-buttons filter-buttons--type">
-            <button className="filter-btn active">All</button>
-            <button className="filter-btn">Landing Page</button>
-            <button className="filter-btn">SPA</button>
-            <button className="filter-btn">Other</button>
+          <div className="filter">
+
+            <div className="filter__buttons filter__buttons--type">
+              <button className="filter__btn active">All</button>
+              <button className="filter__btn">Landing Page</button>
+              <button className="filter__btn">SPA</button>
+              <button className="filter__btn">Other</button>
+            </div>
+
+            <div className="filter__buttons filter__buttons--stack">
+              <button className="filter__btn">Sass(SCSS)</button>
+              <button className="filter__btn">Bootstrap/Materialize</button>
+              <button className="filter__btn">jQuery</button>
+              <button className="filter__btn">React</button>
+            </div>
           </div>
 
-          <div className="filter-buttons filter-buttons--stack">
-            <button className="filter-btn">Sass(SCSS)</button>
-            <button className="filter-btn">Bootstrap/Materialize</button>
-            <button className="filter-btn">jQuery</button>
-            <button className="filter-btn">React</button>
-          </div>
         </div>
-
-
       </div>
 
 

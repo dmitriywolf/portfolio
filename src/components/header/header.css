@@ -4,19 +4,15 @@
   left: 0;
   width: 100%;
   padding: 15px 0 10px;
-  z-index: 5;
-  transition: background-color 0.7s;
+  transition: all 0.5s linear;
+  z-index: 10;
 }
 
-/*.header.fixed {*/
-/*  position: fixed;*/
-/*  background-color: rgba(0, 0, 0, 0.9);*/
-/*  z-index: 100;*/
-/*}*/
-
-/*.header.show {*/
-/*  background-color: rgba(0, 0, 0, 0.9);*/
-/*}*/
+.header.fixed {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+}
 
 .header__inner {
   display: flex;

@@ -1,12 +1,10 @@
 .nav {
   display: none;
+  justify-content: center;
   align-items: center;
-  transition: display 0.5s;
+  margin-left: auto;
 }
 
 .nav.active {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
 }
