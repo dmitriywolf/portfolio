@@ -6,3 +6,18 @@
   text-align: center;
   border-top: 2px solid grey;
 }
+
+
+@media (max-width: 960px) {
+  .copyright {
+    /*max-width: 320px;*/
+    /*margin: 0 auto;*/
+    padding: 15px 0;
+    font-size: 16px;
+    /*text-align: center;*/
+    /*border-top: 2px solid grey;*/
+    border-width: 1px;
+  }
+
+
+}

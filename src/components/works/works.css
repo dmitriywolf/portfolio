@@ -5,3 +5,17 @@
   padding: 20px 0;
   margin: 0 -5px;
 }
+
+
+@media (max-width: 960px) {
+  .works {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    padding: 15px 0;
+    /*margin: 0 -5px;*/
+  }
+
+
+
+}

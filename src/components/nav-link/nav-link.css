@@ -12,3 +12,16 @@
 .nav__link:focus {
   color: gray;
 }
+
+@media (max-width: 960px) {
+  .nav__link {
+    margin: 0 15px;
+    font-size: 15px;
+    /*text-decoration: none;*/
+    /*text-transform: uppercase;*/
+    /*color: #00cccc;*/
+    /*cursor: pointer;*/
+  }
+
+
+}

@@ -14,4 +14,19 @@
 }
 
 
+@media (max-width: 960px) {
+  .app__title {
+    font-size: 32px;
+  }
+
+  .app__subtitle {
+    /*padding: 10px 0;*/
+    font-size: 26px;
+  }
+
+
+
+
+}
+
 

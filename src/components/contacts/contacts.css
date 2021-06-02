@@ -24,3 +24,34 @@
 .contact__icon:hover {
   transform: scale(1.2);
 }
+
+
+@media (max-width: 960px) {
+  .contacts {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    /*max-width: 300px;*/
+    margin: 20px auto 0;
+  }
+
+  .contact__item {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    margin: 0 10px;
+  }
+
+  .contact__icon {
+    width: 25px;
+    height: 36px;
+    /*fill: #525252;*/
+    /*transition: fill 0.5s, transform 0.5s;*/
+    /*outline: none;*/
+  }
+
+
+
+
+
+}

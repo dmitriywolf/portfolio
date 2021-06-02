@@ -26,3 +26,24 @@
 .logo__text:hover {
   color: #00cccc;
 }
+
+
+@media (max-width: 960px) {
+  .logo__img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo__text {
+    margin-left: 15px;
+  /*  font-size: 16px;*/
+  /*  font-weight: 700;*/
+  /*  text-transform: uppercase;*/
+  /*  letter-spacing: 0.08em;*/
+  /*  color: #00cccc;*/
+  }
+
+
+
+
+}

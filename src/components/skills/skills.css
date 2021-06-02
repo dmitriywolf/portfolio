@@ -9,7 +9,14 @@
   color: #00cccc;
 }
 
+@media (max-width: 960px) {
+  .skills {
+    margin: 20px 0;
+    /*padding: 10px 0;*/
+  }
 
+
+}
 
 
 
