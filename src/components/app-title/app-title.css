@@ -20,13 +20,46 @@
   }
 
   .app__subtitle {
-    /*padding: 10px 0;*/
     font-size: 26px;
   }
 
+}
 
+@media (max-width: 768px) {
+  .app__title {
+    font-size: 28px;
+  }
 
+  .app__subtitle {
+    font-size: 22px;
+  }
 
 }
 
+@media (max-width: 660px) {
+  .app__title {
+    font-size: 24px;
+  }
+
+  .app__subtitle {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .app__title,
+  .app__subtitle {
+    color: #ffffff;
+  }
+
+  .app__title {
+    font-size: 34px;
+  }
+
+  .app__subtitle {
+    font-size: 26px;
+  }
+
+}
 

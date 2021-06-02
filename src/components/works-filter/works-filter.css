@@ -23,22 +23,33 @@
   cursor: pointer;
 }
 
-.filter__btn:hover {
+.filter__btn--type:hover {
   color: #00cccc;
-  border-color: rgb(0, 204, 204);
+  border-color: #00cccc;
 }
 
-.filter__btn.active {
+.filter__btn--stack:hover {
+  color: rgb(198, 133, 9);
+  border-color: rgb(198, 133, 9);
+}
+
+.filter__btn--type._active,
+.filter__btn--stack._active {
   color: #ffffff;
-  background: #00cccc;
   border-color: transparent;
+}
+
+.filter__btn--type._active {
+  background-color: #00cccc;
+}
+
+.filter__btn--stack._active {
+  background-color: rgb(198, 133, 9);
 }
 
 
 @media (max-width: 960px) {
   .filter {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
     margin: 10px 0;
   }
 
@@ -52,22 +63,45 @@
   }
 
   .filter__btn {
-    /*padding: 5px 10px;*/
     font-size: 16px;
-    /*line-height: 1.4;*/
-    /*letter-spacing: 0.06em;*/
-    /*color: grey;*/
-    /*background-color: transparent;*/
-    /*border: 1px solid gray;*/
-    /*border-radius: 4px;*/
-    /*transition: all linear 0.6s;*/
-    /*cursor: pointer;*/
   }
 
-  /*.filter__buttons {*/
-  /*  width: 50%;*/
-  /*}*/
+}
 
+@media (max-width: 660px) {
+  .filter {
+    flex-direction: column;
+  }
 
+  .filter__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .filter__buttons--stack {
+    margin-top: 5px;
+    justify-content: flex-start;
+  }
+
+  .filter__btn {
+    padding: 4px 8px;
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .filter__buttons {
+    justify-content: center;
+  }
+
+  .filter__buttons--stack {
+    justify-content: center;
+  }
+
+  .filter__title {
+    text-align: center;
+  }
 
 }

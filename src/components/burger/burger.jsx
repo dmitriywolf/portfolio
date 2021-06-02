@@ -3,7 +3,7 @@ import './burger.css';
 
 const Burger = () => {
   return (
-      <button className="burger _burger--close">
+      <button className="burger">
         <span className="burger__item">Menu</span>
       </button>
   )

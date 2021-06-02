@@ -28,30 +28,45 @@
 
 @media (max-width: 960px) {
   .contacts {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
-    /*max-width: 300px;*/
     margin: 20px auto 0;
   }
 
   .contact__item {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
     margin: 0 10px;
   }
 
   .contact__icon {
     width: 25px;
     height: 36px;
-    /*fill: #525252;*/
-    /*transition: fill 0.5s, transform 0.5s;*/
-    /*outline: none;*/
+  }
+}
+
+@media (max-width: 660px) {
+  .contacts {
+    margin: 10px auto 0;
   }
 
+  .contact__icon {
+    width: 20px;
+    height: 28px;
+  }
+
+}
 
 
+@media (max-width: 420px) {
+  .contacts {
+    margin: 60px auto;
+  }
 
+  .contact__item {
+    margin: 0 15px;
+  }
+
+  .contact__icon {
+    width: 28px;
+    height: 38px;
+    fill: #ffffff;
+  }
 
 }

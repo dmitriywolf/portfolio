@@ -23,14 +23,6 @@
 
 @media (max-width: 960px) {
   .header {
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 100%;*/
     padding: 10px 0 10px;
-    /*transition: all 0.5s linear;*/
-    /*z-index: 10;*/
   }
-
-
 }

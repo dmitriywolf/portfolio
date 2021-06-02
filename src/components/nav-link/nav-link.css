@@ -17,11 +17,13 @@
   .nav__link {
     margin: 0 15px;
     font-size: 15px;
-    /*text-decoration: none;*/
-    /*text-transform: uppercase;*/
-    /*color: #00cccc;*/
-    /*cursor: pointer;*/
   }
-
-
 }
+
+@media (max-width: 660px) {
+  .nav__link {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+}
+

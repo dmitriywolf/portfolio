@@ -11,6 +11,7 @@ const Intro = () => {
       <section className="intro">
         <div className="container">
           <div className="intro__inner">
+
             <div className="intro__img-wrap">
               <img src={srcIntroImg} alt={"Intro"}/>
             </div>
