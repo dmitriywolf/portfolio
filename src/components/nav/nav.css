@@ -5,6 +5,28 @@
   margin-left: auto;
 }
 
-.nav.active {
+.nav._active {
   display: flex;
+}
+
+
+@media (max-width: 420px) {
+  .nav{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav._fixed {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .nav._fixed._active {
+    display: flex;
+  }
+
 }

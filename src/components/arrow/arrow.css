@@ -1,0 +1,35 @@
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  left: calc(50% - 15px);
+  display: none;
+  padding: 0;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  fill: #00cccc;
+  cursor: pointer;
+  outline: none;
+  z-index: 5;
+  transform: rotate(-180deg);
+  transition: all linear 0.3s;
+}
+
+.arrow__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.arrow:hover {
+  transform: rotate(180deg) scale(1.2);
+  fill: #ffffff;
+}
+
+
+@media (max-width: 420px) {
+  .arrow {
+    display: block;
+  }
+
+
+}

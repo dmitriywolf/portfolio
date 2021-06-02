@@ -56,7 +56,7 @@
 
 @media (max-width: 420px) {
   .contacts {
-    margin: 60px auto;
+    margin: 0 auto;
   }
 
   .contact__item {
@@ -64,8 +64,8 @@
   }
 
   .contact__icon {
-    width: 28px;
-    height: 38px;
+    width: 30px;
+    height: 42px;
     fill: #ffffff;
   }
 

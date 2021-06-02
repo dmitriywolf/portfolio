@@ -3,6 +3,7 @@ import "./intro.css";
 
 import AppTitle from "../app-title";
 import Contacts from '../contacts';
+import Arrow from "../arrow";
 
 import srcIntroImg from './intro.jpg';
 
@@ -22,6 +23,7 @@ const Intro = () => {
             </div>
 
           </div>
+          <Arrow/>
 
         </div>
       </section>
