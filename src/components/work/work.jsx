@@ -3,7 +3,7 @@ import './work.css';
 
 const Work = (props) => {
 
-  const {filterT, title, desc, stack, srcImg, link} = props;
+  const {title, desc, stack, srcImg, link, filterT} = props;
 
   const items = stack.map((item, index) => {
     return (
@@ -14,7 +14,7 @@ const Work = (props) => {
 
   return (
       <>
-        <div className="work">
+        <div className="work animated zoomIn">
           <img className="work__img" src={srcImg} alt={title}/>
 
           <div className="work__content">

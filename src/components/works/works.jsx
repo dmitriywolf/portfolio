@@ -23,116 +23,115 @@ export default class Works extends Component {
     works: [
       {
         id: this.startIdWorks++,
-        filterT: "lp",
-        title: "Advogrand",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp"],
-        srcImg: srcAdvogrand,
-        link: "https://dmitriywolf.github.io/advogrand/dist/",
-      },
-      {
-        id: this.startIdWorks++,
-        filterT: "lp",
-        title: "Eddie's car",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp"],
-        srcImg: srcBelaz,
-        link: "https://dmitriywolf.github.io/belaz/dist/"
-      },
-      {
-        id: this.startIdWorks++,
-        filterT: "lp",
-        title: "Continent",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
-        srcImg: srcContinent,
-        link: "https://dmitriywolf.github.io/contient/dist/"
-      },
-      {
-        id: this.startIdWorks++,
-        filterT: "lp",
-        title: "Yoga",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
-        srcImg: srcYoga,
-        link: "https://dmitriywolf.github.io/yoga/dist/"
-      },
-      {
-        id: this.startIdWorks++,
-        filterT: "sp",
         title: "Mining Courses",
         desc: "Single Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
+        stack: ["React"],
         srcImg: srcCourses,
-        link: "https://dmitriywolf.github.io/courses/dist/"
-      },
-      {
-        id: this.startIdWorks++,
-        title: "Bouncy",
-        filterT: "lp",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
-        srcImg: srcBouncy,
-        link: "https://dmitriywolf.github.io/bouncy/dist/"
-      },
-      {
-        id: this.startIdWorks++,
-        title: "23 Degree",
-        filterT: "lp",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
-        srcImg: srcDegree,
-        link: "https://dmitriywolf.github.io/degree/dist/"
-      },
-      {
-        id: this.startIdWorks++,
-        title: "Дома на века",
-        filterT: "lp",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
-        srcImg: srcHouses,
-        link: "https://dmitriywolf.github.io/houses/dist/"
-      },
-      {
-        id: this.startIdWorks++,
-        title: "Granit",
-        filterT: "lp",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
-        srcImg: srcGranit,
-        link: "https://dmitriywolf.github.io/granit/dist/"
-      },
-      {
-        id: this.startIdWorks++,
-        title: "Irvas",
-        filterT: "lp",
-        desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
-        srcImg: srcIrvas,
-        link: "https://dmitriywolf.github.io/irvas/dist/"
+        link: "https://dmitriywolf.github.io/courses/dist/",
+        filterT: "sp",
       },
       {
         id: this.startIdWorks++,
         title: "Todo app",
-        filterT: "sp",
         desc: "Single Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
+        stack: ["React"],
         srcImg: srcTodoApp,
-        link: "https://dmitriywolf.github.io/todoapp/dist/"
+        link: "https://dmitriywolf.github.io/todoapp/dist/",
+        filterT: "sp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Yoga",
+        desc: "Landing Page",
+        stack: ["Sass", "Gulp", "Babel/Webpack", "Bootstrap", "JS"],
+        srcImg: srcYoga,
+        link: "https://dmitriywolf.github.io/yoga/dist/",
+        filterT: "lp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Seven Continents",
+        desc: "Landing Page",
+        stack: ["Sass", "Gulp", "Babel/Webpack", "Bootstrap", "JS"],
+        srcImg: srcContinent,
+        link: "https://dmitriywolf.github.io/continent/dist/",
+        filterT: "lp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Advogrand",
+        desc: "Landing Page",
+        stack: ["Sass", "Gulp", "Babel/Webpack", "JS"],
+        srcImg: srcAdvogrand,
+        link: "https://dmitriywolf.github.io/advogrand/dist/",
+        filterT: "lp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Дома на века",
+        desc: "Landing Page",
+        stack: ["Sass", "Gulp", "jQuery"],
+        srcImg: srcHouses,
+        link: "https://dmitriywolf.github.io/houses/dist/",
+        filterT: "lp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "23 Degree",
+        desc: "Landing Page",
+        stack: ["Sass", "Gulp", "JS"],
+        srcImg: srcDegree,
+        link: "https://dmitriywolf.github.io/degree/dist/",
+        filterT: "lp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Eddie's car",
+        desc: "Landing Page",
+        stack: ["jQuery"],
+        srcImg: srcBelaz,
+        link: "https://dmitriywolf.github.io/belaz/dist/",
+        filterT: "lp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Bouncy",
+        desc: "Landing Page",
+        stack: ["jQuery"],
+        srcImg: srcBouncy,
+        link: "https://dmitriywolf.github.io/bouncy/dist/",
+        filterT: "lp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Окна Ирвас",
+        desc: "Landing Page",
+        stack: ["JS"],
+        srcImg: srcIrvas,
+        link: "https://dmitriywolf.github.io/irvas/build/",
+        filterT: "lp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Гранит",
+        desc: "Page of the site",
+        stack: ["jQuery"],
+        srcImg: srcGranit,
+        link: "https://dmitriywolf.github.io/granit/build/",
+        filterT: "lp",
       },
       {
         id: this.startIdWorks++,
         title: "Shopno",
-        filterT: "lp",
         desc: "Landing Page",
-        stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
+        stack: ["jQuery"],
         srcImg: srcShopno,
-        link: "https://dmitriywolf.github.io/shopno/dist/"
+        link: "https://dmitriywolf.github.io/shopno/",
+        filterT: "lp",
       },
     ],
     filter: "all" // all, lp, sp, other
   };
-
 
   filterWorks(elements, filter) {
     switch (filter) {
@@ -166,7 +165,6 @@ export default class Works extends Component {
           <Work key={id} {...workProps}/>
       )
     });
-
 
     return (
         <div className="works__wrapper" id="works">

@@ -12,7 +12,7 @@ export default class Nav extends Component {
       classes += ' _show'
     }
     return (
-        <nav className={`nav ${classes}`}>
+        <nav className={`nav animated fadeInDown ${classes}`}>
           <NavLink link="main"/>
           <NavLink link="skills"/>
           <NavLink link="works"/>
