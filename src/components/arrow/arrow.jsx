@@ -8,7 +8,7 @@ const Arrow = () => {
 
       <button className="arrow">
         <svg className="arrow__icon">
-          <use xlinkHref="img/sprite.svg#icon-arrow"/>
+          <use xlinkHref="./img/sprite.svg#icon-arrow"/>
         </svg>
       </button>
   )

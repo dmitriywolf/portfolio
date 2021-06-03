@@ -37,6 +37,7 @@
   width: 100%;
   height: 100%;
   padding: 10px;
+  color: #ffffff;
   overflow: hidden;
   z-index: 2;
   opacity: 0;
@@ -48,29 +49,43 @@
 }
 
 .work__title {
-  padding: 15px 10px;
+  padding: 5px 0;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  color: #ffffff;
 }
 
 .work__desc {
-  padding: 5px 10px;
   font-size: 16px;
-  color: #ffffff;
+}
+
+.work__stack-wrap span {
+  font-size: 16px;
+}
+
+.work__stack {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.work__stack span {
+  padding: 2px 5px;
+  margin: 1px;
+  font-size: 16px;
+  background-color: grey;
+  border-radius: 2px;
 }
 
 .work__button-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
 }
 
 .work__button {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 5px 10px 5px 5px;
 
   font-size: 15px;
   color: #ffffff;
@@ -83,7 +98,7 @@
 }
 
 .work__button:hover {
-  background-color: #00cccc;
+  background-color: grey;
 }
 
 .work__button-img {
@@ -94,7 +109,6 @@
 
 @media (max-width: 960px) {
   .work__title {
-    padding: 5px 10px;
     font-size: 20px;
   }
 
@@ -110,16 +124,19 @@
   }
 
   .work__title {
-    padding: 5px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .work__desc {
-    padding: 5px;
+    font-size: 15px;
   }
 
-  .work__button-wrapper {
-    padding: 0 5px;
+  .work__stack-wrap span {
+    font-size: 15px;
+  }
+
+  .work__stack span {
+    font-size: 15px;
   }
 
   .work__button {
@@ -134,16 +151,7 @@
   }
 
   .work__title {
-    padding: 5px;
     font-size: 18px;
-  }
-
-  .work__desc {
-    padding: 5px;
-  }
-
-  .work__button-wrapper {
-    padding: 0 5px;
   }
 
   .work__button {
@@ -156,5 +164,4 @@
     width: 100%;
     margin: 5px 0;
   }
-
 }

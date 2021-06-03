@@ -1,6 +1,4 @@
 .filter {
-  display: flex;
-  justify-content: space-between;
   margin: 20px 0;
 }
 
@@ -23,28 +21,15 @@
   cursor: pointer;
 }
 
-.filter__btn--type:hover {
+.filter__btn:hover {
   color: #00cccc;
   border-color: #00cccc;
 }
 
-.filter__btn--stack:hover {
-  color: rgb(198, 133, 9);
-  border-color: rgb(198, 133, 9);
-}
-
-.filter__btn--type._active,
-.filter__btn--stack._active {
+.filter__btn._active {
   color: #ffffff;
-  border-color: transparent;
-}
-
-.filter__btn--type._active {
   background-color: #00cccc;
-}
-
-.filter__btn--stack._active {
-  background-color: rgb(198, 133, 9);
+  border-color: transparent;
 }
 
 
@@ -58,50 +43,25 @@
     flex-wrap: wrap;
   }
 
-  .filter__buttons--stack {
-    justify-content: flex-end;
-  }
-
   .filter__btn {
     font-size: 16px;
   }
-
 }
 
 @media (max-width: 660px) {
-  .filter {
-    flex-direction: column;
-  }
-
-  .filter__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .filter__buttons--stack {
-    margin-top: 5px;
-    justify-content: flex-start;
-  }
-
   .filter__btn {
     padding: 4px 8px;
     font-size: 15px;
   }
-
 }
 
 @media (max-width: 420px) {
   .filter__buttons {
-    justify-content: center;
-  }
-
-  .filter__buttons--stack {
+    display: flex;
     justify-content: center;
   }
 
   .filter__title {
     text-align: center;
   }
-
 }
