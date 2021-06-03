@@ -24,13 +24,22 @@ export default class Header extends Component {
   };
 
   render() {
+    const {fixedHeader} = this.props;
     let {showMenu, openBurger} = this.state;
+
+    let classes = "";
+
+    if(fixedHeader) {
+      classes += ' _fixed';
+    }
+
+
     return (
-        <header className="header">
+        <header className={`header ${classes}`} id="header">
           <div className="container">
             <div className="header__inner">
               <Logo/>
-              <Nav showMenu={showMenu}/>
+              <Nav showMenu={showMenu} clazz={classes}/>
               <Burger openBurger={openBurger} onBurger={this.onToggleBurger}/>
             </div>
           </div>

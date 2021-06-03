@@ -8,9 +8,9 @@ export default class Nav extends Component {
 
   render() {
 
-    const {showMenu} = this.props;
+    const {showMenu, clazz} = this.props;
 
-    let classes = "";
+    let classes = clazz;
 
     if (showMenu) {
       classes += ' _show'

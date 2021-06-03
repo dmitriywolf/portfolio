@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   padding: 15px 0 10px;
-  transition: all 0.5s linear;
   z-index: 10;
 }
 
@@ -34,6 +33,5 @@
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 100;
   }
-
 
 }
