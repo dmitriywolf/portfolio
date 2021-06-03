@@ -4,7 +4,7 @@ import './works-filter.css';
 
 const WorksFilter = () => {
   return (
-      <div className="filter__wrapper">
+      <div className="filter__wrapper" id="works">
         <div className="container">
 
           <h3 className="filter__title">Works</h3>

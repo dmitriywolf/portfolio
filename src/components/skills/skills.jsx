@@ -19,7 +19,7 @@ const skills = [
 
 const Skills = () => {
   return (
-      <div className="skills">
+      <div className="skills" id="skills">
         <div className="container">
           <h3 className="skills__title">Skills / Experience</h3>
           <SkillList skills={skills}/>

@@ -9,7 +9,7 @@ import srcIntroImg from './intro.jpg';
 
 const Intro = () => {
   return (
-      <section className="intro">
+      <section className="intro" id="main">
         <div className="container">
           <div className="intro__inner">
 

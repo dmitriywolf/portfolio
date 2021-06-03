@@ -5,13 +5,12 @@
   margin-left: auto;
 }
 
-.nav._active {
+.nav._show {
   display: flex;
 }
 
-
 @media (max-width: 420px) {
-  .nav{
+  .nav {
     position: absolute;
     right: 0;
     top: 100%;
@@ -25,7 +24,7 @@
     background-color: rgba(0, 0, 0, 0.9);
   }
 
-  .nav._fixed._active {
+  .nav._fixed._show {
     display: flex;
   }
 

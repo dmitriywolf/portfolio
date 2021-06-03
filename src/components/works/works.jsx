@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './works.css';
 import Work from '../work';
 
-
 import srcAdvogrand from './img/advogrand.jpg';
 import srcBelaz from './img/belaz.jpg';
 import srcContinent from './img/continent.jpg';

@@ -1,17 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './nav.css';
 
 import NavLink from '../nav-link'
 
-const Nav = () => {
+export default class Nav extends Component {
 
-  return(
-      <nav className="nav _active">
-        <NavLink link="main" />
-        <NavLink link="skills" />
-        <NavLink link="works" />
-      </nav>
-  )
+
+  render() {
+
+    const {showMenu} = this.props;
+
+    let classes = "";
+
+    if (showMenu) {
+      classes += ' _show'
+    }
+
+
+    return (
+        <nav className={`nav ${classes}`}>
+          <NavLink link="main"/>
+          <NavLink link="skills"/>
+          <NavLink link="works"/>
+        </nav>
+    )
+  }
 };
-
-export default Nav;
