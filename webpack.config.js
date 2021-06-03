@@ -18,7 +18,7 @@ module.exports = (env = {}) => {
   const getPlugins = () => {
     const plugins = [
       new HtmlWebpackPlugin({
-        title: 'Portfolio',
+        title: 'Portfolio: Dmitriy.Dev',
         template: 'public/index.html'
       }),
     ];

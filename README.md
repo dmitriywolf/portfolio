@@ -1,3 +1,3 @@
-# dmitriy.dev 
+# Dmitriy.Dev 
 Portfolio App
 
