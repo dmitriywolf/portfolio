@@ -1,27 +1,50 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './works-filter.css';
 
 
-const WorksFilter = () => {
-  return (
-      <div className="filter__wrapper">
-        <div className="container">
-          <h3 className="filter__title">Works</h3>
+export default class WorksFilter extends Component {
 
-          <div className="filter">
-            <div className="filter__buttons">
-              <button className="filter__btn _active">All</button>
-              <button className="filter__btn">Landing Page</button>
-              <button className="filter__btn">SPA</button>
-              <button className="filter__btn">Other</button>
+  filterButtons = [
+    {name: 'all', label: "All"},
+    {name: 'lp', label: "Landing Page"},
+    {name: 'sp', label: "Single Page"},
+    {name: 'other', label: "Other"},
+  ];
+
+  render() {
+
+    const {filter, onFilter} = this.props;
+
+    const buttons = this.filterButtons.map(({name, label}) => {
+      const isActive = filter === name;
+      const filterClass = isActive ? '_active' : '';
+
+      return (
+          <button className={`filter__btn ${filterClass}`}
+                  type="button"
+                  key={name}
+                  onClick={() => onFilter(name)}>
+            {label}
+          </button>
+      )
+    });
+
+
+    return (
+        <div className="filter__wrapper">
+          <div className="container">
+            <h3 className="filter__title">Works</h3>
+
+            <div className="filter">
+              <div className="filter__buttons">
+                {buttons}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+    )
+  }
 
 
-  )
 };
 
-
-export default WorksFilter;

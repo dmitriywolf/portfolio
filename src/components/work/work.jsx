@@ -3,7 +3,7 @@ import './work.css';
 
 const Work = (props) => {
 
-  const {title, desc, stack, srcImg, link} = props;
+  const {filterT, title, desc, stack, srcImg, link} = props;
 
   const items = stack.map((item, index) => {
     return (

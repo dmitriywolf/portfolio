@@ -23,14 +23,16 @@ export default class Works extends Component {
     works: [
       {
         id: this.startIdWorks++,
+        filterT: "lp",
         title: "Advogrand",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp"],
         srcImg: srcAdvogrand,
-        link: "https://dmitriywolf.github.io/advogrand/dist/"
+        link: "https://dmitriywolf.github.io/advogrand/dist/",
       },
       {
         id: this.startIdWorks++,
+        filterT: "lp",
         title: "Eddie's car",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp"],
@@ -39,6 +41,7 @@ export default class Works extends Component {
       },
       {
         id: this.startIdWorks++,
+        filterT: "lp",
         title: "Continent",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
@@ -47,6 +50,7 @@ export default class Works extends Component {
       },
       {
         id: this.startIdWorks++,
+        filterT: "lp",
         title: "Yoga",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
@@ -55,6 +59,7 @@ export default class Works extends Component {
       },
       {
         id: this.startIdWorks++,
+        filterT: "sp",
         title: "Mining Courses",
         desc: "Single Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
@@ -64,6 +69,7 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "Bouncy",
+        filterT: "lp",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
         srcImg: srcBouncy,
@@ -72,6 +78,7 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "23 Degree",
+        filterT: "lp",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
         srcImg: srcDegree,
@@ -80,6 +87,7 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "Дома на века",
+        filterT: "lp",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
         srcImg: srcHouses,
@@ -88,6 +96,7 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "Granit",
+        filterT: "lp",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
         srcImg: srcGranit,
@@ -96,6 +105,7 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "Irvas",
+        filterT: "lp",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
         srcImg: srcIrvas,
@@ -104,6 +114,7 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "Todo app",
+        filterT: "sp",
         desc: "Single Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
         srcImg: srcTodoApp,
@@ -112,22 +123,45 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "Shopno",
+        filterT: "lp",
         desc: "Landing Page",
         stack: ["Sass", "Bootstrap", "Gulp", "Webpack", "Babel.js"],
         srcImg: srcShopno,
         link: "https://dmitriywolf.github.io/shopno/dist/"
       },
-    ]
+    ],
+    filter: "all" // all, lp, sp, other
+  };
+
+
+  filterWorks(elements, filter) {
+    switch (filter) {
+      case "all":
+        return elements;
+      case "lp":
+        return elements.filter((work) => (work.filterT === "lp"));
+      case "sp":
+        return elements.filter((work) => (work.filterT === "sp"));
+      case "other":
+        return elements.filter((work) => (work.filterT === "other"));
+      default:
+        return elements;
+    }
+  }
+
+  onFilter = (filter) => {
+    this.setState({filter: filter})
   };
 
 
   render() {
 
-    let {works} = this.state;
+    let {works, filter} = this.state;
 
-    const items = works.map(work => {
+    const visibleItems = this.filterWorks(works, filter);
+
+    const items = visibleItems.map(work => {
       const {id, ...workProps} = work;
-
       return (
           <Work key={id} {...workProps}/>
       )
@@ -136,12 +170,10 @@ export default class Works extends Component {
 
     return (
         <div className="works__wrapper" id="works">
-          <WorksFilter/>
+          <WorksFilter filter={filter} onFilter={this.onFilter}/>
           <div className="container">
-
             <div className="works">
               {items}
-
             </div>
           </div>
         </div>
