@@ -11,10 +11,8 @@ import srcCourses from './img/courses.jpg';
 import srcBouncy from './img/bouncy.jpg';
 import srcDegree from './img/degree.jpg';
 import srcHouses from './img/houses.jpg';
-import srcGranit from './img/granit.jpg';
-import srcIrvas from './img/irvas.jpg';
 import srcTodoApp from './img/todoapp.jpg';
-import srcShopno from './img/shopno.jpg';
+
 
 export default class Works extends Component {
   startIdWorks = 1000;
@@ -34,7 +32,7 @@ export default class Works extends Component {
         id: this.startIdWorks++,
         title: "Todo app",
         desc: "Single Page",
-        stack: ["React"],
+        stack: ["Bootstrap", "React"],
         srcImg: srcTodoApp,
         link: "https://dmitriywolf.github.io/todoapp/dist/",
         filterT: "sp",
@@ -43,7 +41,7 @@ export default class Works extends Component {
         id: this.startIdWorks++,
         title: "Yoga",
         desc: "Landing Page",
-        stack: ["Sass", "Gulp", "Babel/Webpack", "Bootstrap", "JS"],
+        stack: ["Sass", "JS", "Gulp", "Babel/Webpack", "Bootstrap"],
         srcImg: srcYoga,
         link: "https://dmitriywolf.github.io/yoga/dist/",
         filterT: "lp",
@@ -52,7 +50,7 @@ export default class Works extends Component {
         id: this.startIdWorks++,
         title: "Seven Continents",
         desc: "Landing Page",
-        stack: ["Sass", "Gulp", "Babel/Webpack", "Bootstrap", "JS"],
+        stack: ["Sass", "JS", "Gulp", "Babel/Webpack", "Bootstrap"],
         srcImg: srcContinent,
         link: "https://dmitriywolf.github.io/continent/dist/",
         filterT: "lp",
@@ -61,7 +59,7 @@ export default class Works extends Component {
         id: this.startIdWorks++,
         title: "Advogrand",
         desc: "Landing Page",
-        stack: ["Sass", "Gulp", "Babel/Webpack", "JS"],
+        stack: ["Sass", "JS", "Gulp", "Babel/Webpack"],
         srcImg: srcAdvogrand,
         link: "https://dmitriywolf.github.io/advogrand/dist/",
         filterT: "lp",
@@ -70,7 +68,7 @@ export default class Works extends Component {
         id: this.startIdWorks++,
         title: "Дома на века",
         desc: "Landing Page",
-        stack: ["Sass", "Gulp", "jQuery"],
+        stack: ["Sass", "jQuery", "Gulp"],
         srcImg: srcHouses,
         link: "https://dmitriywolf.github.io/houses/dist/",
         filterT: "lp",
@@ -79,7 +77,7 @@ export default class Works extends Component {
         id: this.startIdWorks++,
         title: "23 Degree",
         desc: "Landing Page",
-        stack: ["Sass", "Gulp", "JS"],
+        stack: ["Sass", "JS", "Gulp",],
         srcImg: srcDegree,
         link: "https://dmitriywolf.github.io/degree/dist/",
         filterT: "lp",
@@ -97,36 +95,9 @@ export default class Works extends Component {
         id: this.startIdWorks++,
         title: "Bouncy",
         desc: "Landing Page",
-        stack: ["jQuery"],
+        stack: ["jQuery", "Gulp"],
         srcImg: srcBouncy,
         link: "https://dmitriywolf.github.io/bouncy/dist/",
-        filterT: "lp",
-      },
-      {
-        id: this.startIdWorks++,
-        title: "Окна Ирвас",
-        desc: "Landing Page",
-        stack: ["JS"],
-        srcImg: srcIrvas,
-        link: "https://dmitriywolf.github.io/irvas/build/",
-        filterT: "lp",
-      },
-      {
-        id: this.startIdWorks++,
-        title: "Гранит",
-        desc: "Page of the site",
-        stack: ["jQuery"],
-        srcImg: srcGranit,
-        link: "https://dmitriywolf.github.io/granit/build/",
-        filterT: "lp",
-      },
-      {
-        id: this.startIdWorks++,
-        title: "Shopno",
-        desc: "Landing Page",
-        stack: ["jQuery"],
-        srcImg: srcShopno,
-        link: "https://dmitriywolf.github.io/shopno/",
         filterT: "lp",
       },
     ],

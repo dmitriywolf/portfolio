@@ -1,5 +1,5 @@
 {
-  "name": "portfolioapp",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio React Dev",
   "main": "index.jsx",
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmitriywolf/portfolioApp.git"
+    "url": "git+https://github.com/dmitriywolf/portfolio.git"
   },
-  "author": "D. Volchenko dmitriy-dev@ukr.net",
+  "author": "D.Volchenko(dmitriy-dev@ukr.net)",
   "license": "ISC",
   "browserslist": [
-    "last 10 chrome versions",
-    "last 10 firefox versions",
+    "last 5 chrome versions",
+    "last 5 firefox versions",
     "last 5 edge versions"
   ],
   "bugs": {
-    "url": "https://github.com/dmitriywolf/portfolioApp/issues"
+    "url": "https://github.com/dmitriywolf/portfolio/issues"
   },
-  "homepage": "https://github.com/dmitriywolf/portfolioApp#readme",
+  "homepage": "https://github.com/dmitriywolf/portfolio#readme",
   "dependencies": {
     "core-js": "^3.8.3",
     "react": "^17.0.1",
