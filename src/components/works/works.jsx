@@ -22,11 +22,11 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "Mining Courses",
-        desc: "Single Page",
-        stack: ["React"],
+        desc: "Web site",
+        stack: ["Sass", "JS", "Gulp"],
         srcImg: srcCourses,
         link: "https://dmitriywolf.github.io/courses/dist/",
-        filterT: "sp",
+        filterT: "other",
       },
       {
         id: this.startIdWorks++,

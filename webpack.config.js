@@ -29,7 +29,7 @@ module.exports = (env = {}) => {
       }))
     }
     return plugins;
-  }
+  };
 
   return {
     mode: isProd ? 'production' : isDev && 'development',
