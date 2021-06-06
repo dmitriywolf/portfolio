@@ -7,8 +7,9 @@ export default class WorksFilter extends Component {
   filterButtons = [
     {name: 'all', label: "All"},
     {name: 'lp', label: "Landing Page"},
-    {name: 'sp', label: "Single Page"},
-    {name: 'other', label: "Other"},
+    {name: 'sp', label: "Single Page App"},
+    // {name: 'ws', label: "Website"},
+    // {name: 'other', label: "Other"}
   ];
 
   render() {

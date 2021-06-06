@@ -3,6 +3,7 @@ import './works.css';
 import WorksFilter from '../works-filter';
 import Work from '../work';
 
+import srcStroy from './img/stroycontr.jpg';
 import srcAdvogrand from './img/advogrand.jpg';
 import srcBelaz from './img/belaz.jpg';
 import srcContinent from './img/continent.jpg';
@@ -13,7 +14,6 @@ import srcDegree from './img/degree.jpg';
 import srcHouses from './img/houses.jpg';
 import srcTodoApp from './img/todoapp.jpg';
 
-
 export default class Works extends Component {
   startIdWorks = 1000;
 
@@ -21,16 +21,25 @@ export default class Works extends Component {
     works: [
       {
         id: this.startIdWorks++,
-        title: "Mining Courses",
-        desc: "Web site",
-        stack: ["Sass", "JS", "Gulp"],
-        srcImg: srcCourses,
-        link: "https://dmitriywolf.github.io/courses/dist/",
-        filterT: "other",
+        title: "Строй контроль",
+        desc: "ЕЩЕ в работе...",
+        stack: ["Sass", "JS", "Gulp", "Babel/Webpack",],
+        srcImg: srcStroy,
+        link: "https://dmitriywolf.github.io/stroycontr/dist/",
+        filterT: "lp",
       },
       {
         id: this.startIdWorks++,
-        title: "Todo app",
+        title: "Mining Courses App",
+        desc: "ЕЩЕ в работе...",
+        stack: ["MongoDB", "Express.js", "React"],
+        srcImg: srcCourses,
+        link: "https://github.com/dmitriywolf/coursesapp",
+        filterT: "sp",
+      },
+      {
+        id: this.startIdWorks++,
+        title: "Todo App",
         desc: "Single Page",
         stack: ["Bootstrap", "React"],
         srcImg: srcTodoApp,
@@ -91,6 +100,7 @@ export default class Works extends Component {
         link: "https://dmitriywolf.github.io/belaz/dist/",
         filterT: "lp",
       },
+
       {
         id: this.startIdWorks++,
         title: "Bouncy",
@@ -101,7 +111,7 @@ export default class Works extends Component {
         filterT: "lp",
       },
     ],
-    filter: "all" // all, lp, sp, other
+    filter: "all"
   };
 
   filterWorks(elements, filter) {
@@ -112,6 +122,8 @@ export default class Works extends Component {
         return elements.filter((work) => (work.filterT === "lp"));
       case "sp":
         return elements.filter((work) => (work.filterT === "sp"));
+      case "ws":
+        return elements.filter((work) => (work.filterT === "ws"));
       case "other":
         return elements.filter((work) => (work.filterT === "other"));
       default:
@@ -125,18 +137,14 @@ export default class Works extends Component {
 
 
   render() {
-
     let {works, filter} = this.state;
-
     const visibleItems = this.filterWorks(works, filter);
-
     const items = visibleItems.map(work => {
       const {id, ...workProps} = work;
       return (
           <Work key={id} {...workProps}/>
       )
     });
-
     return (
         <div className="works__wrapper" id="works">
           <WorksFilter filter={filter} onFilter={this.onFilter}/>
