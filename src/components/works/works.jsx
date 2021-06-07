@@ -3,7 +3,6 @@ import './works.css';
 import WorksFilter from '../works-filter';
 import Work from '../work';
 
-import srcStroy from './img/stroycontr.jpg';
 import srcAdvogrand from './img/advogrand.jpg';
 import srcBelaz from './img/belaz.jpg';
 import srcContinent from './img/continent.jpg';
@@ -21,18 +20,9 @@ export default class Works extends Component {
     works: [
       {
         id: this.startIdWorks++,
-        title: "Строй контроль",
-        desc: "ЕЩЕ в работе...",
-        stack: ["Sass", "JS", "Gulp", "Babel/Webpack",],
-        srcImg: srcStroy,
-        link: "https://dmitriywolf.github.io/stroycontr/dist/",
-        filterT: "lp",
-      },
-      {
-        id: this.startIdWorks++,
         title: "Mining Courses App",
-        desc: "ЕЩЕ в работе...",
-        stack: ["MongoDB", "Express.js", "React"],
+        desc: "Еще в работе...",
+        stack: ["React"],
         srcImg: srcCourses,
         link: "https://github.com/dmitriywolf/coursesapp",
         filterT: "sp",
@@ -40,7 +30,7 @@ export default class Works extends Component {
       {
         id: this.startIdWorks++,
         title: "Todo App",
-        desc: "Single Page",
+        desc: "Single Page Арр",
         stack: ["Bootstrap", "React"],
         srcImg: srcTodoApp,
         link: "https://dmitriywolf.github.io/todoapp/dist/",
@@ -100,7 +90,6 @@ export default class Works extends Component {
         link: "https://dmitriywolf.github.io/belaz/dist/",
         filterT: "lp",
       },
-
       {
         id: this.startIdWorks++,
         title: "Bouncy",
