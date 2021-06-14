@@ -24,7 +24,7 @@ export default class Works extends Component {
         desc: "Еще в работе...",
         stack: ["React"],
         srcImg: srcCourses,
-        link: "https://github.com/dmitriywolf/coursesapp",
+        link: "https://dmitriywolf.github.io/coursesapp/dist/",
         filterT: "sp",
       },
       {
